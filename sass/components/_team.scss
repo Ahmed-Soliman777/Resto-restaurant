@@ -1,0 +1,130 @@
+.chefs {
+  padding: 5% 0%;
+  .container {
+    .test {
+      color: #f34949;
+    }
+    .test,
+    h2 {
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .team {
+      display: flex;
+      column-gap: 50px;
+      text-align: center;
+      text-transform: capitalize;
+      .member_one {
+        background-image: url(../../img/chef-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+        width: calc(100% / 3);
+        div {
+          background: #fff;
+          padding: 2% 4%;
+          position: absolute;
+          bottom: 20px;
+          left: auto;
+          right: 50%;
+        }
+      }
+      .member_two {
+        background-image: url(../../img/chef-2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+        width: calc(100% / 3);
+        div {
+          background: #fff;
+          padding: 2% 4%;
+          position: absolute;
+          bottom: 20px;
+          left: auto;
+          right: 50%;
+        }
+      }
+      .member_three {
+        background-image: url(../../img/chef-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+        width: calc(100% / 3);
+        div {
+          background: #fff;
+          padding: 2% 4%;
+          position: absolute;
+          bottom: 20px;
+          left: auto;
+          right: 50%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 840px) and (min-width: 700px) {
+  .chefs {
+    .container {
+      .team {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+        .member_one{
+          height: 30rem;
+        }
+        .member_two{
+          height: 30rem;
+        }
+        .member_three{
+          height: 30rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 700px) and (min-width: 500px) {
+  .chefs {
+    .container {
+      .team {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+        .member_one{
+          height: 20rem;
+        }
+        .member_two{
+          height: 20rem;
+        }
+        .member_three{
+          height: 20rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) and (min-width: 0px) {
+  .chefs {
+    .container {
+      .team {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+        .member_one{
+          height: 20rem;
+          width: 10rem;
+        }
+        .member_two{
+          height: 20rem;
+          width: 10rem;
+        }
+        .member_three{
+          height: 20rem;
+          width: 10rem;
+        }
+      }
+    }
+  }
+}

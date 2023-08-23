@@ -1,0 +1,107 @@
+.welcoming_section{
+    margin-top: 7.5%;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 5rem;
+        text-transform: capitalize;
+    }
+    .child_two{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        .child_two_child_one{
+            h6{
+                color: #f45252;
+            }
+        }
+        .child_two_child_one{
+            img{
+                box-shadow: 15px 5px 3px 3px #000;
+            }
+        }
+        .child_two_child_two{
+            .images{
+                margin-top: 2.5%;
+                display: flex;
+                justify-content: space-between;
+                img{
+                    width: 75%;
+                }
+                h5{
+                    margin-top: 5%;
+                    color: #f45252;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1100px) and (min-width:0px){
+    .welcoming_section{
+        .container{
+            .child_one{
+                img{
+                    width: 25rem;
+                }
+            }
+            .child_two{
+                .child_two_child_two{
+                    .images{
+                        h5{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1100px) and (min-width:950px){
+    .welcoming_section{
+        .container{
+            .child_two{
+                .child_two_child_two{
+                    .images{
+                        img{
+                            width: 7.5rem;
+                        }
+                        h5{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:950px) and (min-width:0px){
+    .welcoming_section{
+        .container{
+            flex-direction: column;
+            text-align: center;
+            row-gap: 2.5rem;
+        }
+    }
+}
+@media (max-width:500px) and (min-width:0px){
+    .welcoming_section{
+        .container{
+            .child_one{
+                img{
+                    width: 70%;
+                }
+            }
+            .child_two{
+                .child_two_child_two{
+                    .images{
+                        flex-direction: column;
+                        img{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+.specialties {
+  margin-top: 5%;
+  padding: 5% 0%;
+  background-color: #f7f8f9;
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    h6 {
+      color: #f34949;
+    }
+    h6,
+    h2 {
+      text-align: center;
+    }
+    .specialties_child_one {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 15%;
+      align-items: center;
+      & > :nth-child(1) {
+        .number {
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+          .no_line {
+            width: 150px;
+            border-top: 1px solid #000;
+          }
+        }
+        .content {
+          margin-top: 5%;
+          margin-left: 5%;
+          h3 {
+            span {
+              color: #f34949;
+            }
+          }
+          button {
+            margin-top: 2%;
+            text-transform: capitalize;
+            padding: 2% 4%;
+            border: transparent;
+            background-color: #f34949;
+            color: #fff;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            transition: 1s;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+            &:hover {
+              transform: scale(1.1);
+              -webkit-transform: scale(1.1);
+              -moz-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+              -o-transform: scale(1.1);
+              background-color: rgb(94, 94, 45);
+            }
+            &:active {
+              transform: scale(0.8);
+              -webkit-transform: scale(0.8);
+              -moz-transform: scale(0.8);
+              -ms-transform: scale(0.8);
+              -o-transform: scale(0.8);
+              background-color: #f34949;
+            }
+          }
+        }
+    }
+    .image {
+      img {
+        width: 30rem;
+        box-shadow: 0px 25px 50px 0px #00000069;
+      }
+    }
+      }
+    }
+  }
+  .specialties_child_two {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15%;
+    align-items: center;
+    .image {
+      img {
+        width: 30rem;
+        box-shadow: 0px 25px 50px 0px #00000069;
+      }
+    }
+    & > :nth-child(2) {
+      .number {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        .no_line {
+          width: 150px;
+          border-top: 1px solid #000;
+        }
+      }
+      .content {
+        margin-top: 5%;
+        margin-left: 5%;
+        h3 {
+          span {
+            color: #f34949;
+          }
+        }
+        button {
+          margin-top: 2%;
+          text-transform: capitalize;
+          padding: 2% 4%;
+          border: transparent;
+          background-color: #f34949;
+          color: #fff;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
+          transition: 1s;
+          -webkit-transition: 1s;
+          -moz-transition: 1s;
+          -ms-transition: 1s;
+          -o-transition: 1s;
+          &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            background-color: rgb(94, 94, 45);
+          }
+          &:active {
+            transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            -o-transform: scale(0.8);
+            background-color: #f34949;
+          }
+        }
+      }
+    }
+  }
+
+@media (max-width:1000px) and (min-width:880px){
+    .specialties{
+        .container{
+            .specialties_child_one{
+                .image{
+                    img{
+                        width: 25rem;
+                    }
+                }
+            }
+            .specialties_child_two{
+                .image{
+                    img{
+                        width: 25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:880px) and (min-width:0px){
+    button{
+        margin-bottom: 5%;
+    }
+    .specialties{
+        .container{
+            align-items: center;
+            .specialties_child_one{
+                text-align: center;
+                flex-direction: column;
+                .image{
+                    img{
+                        width: 25rem;
+                    }
+                }   
+            }
+            .specialties_child_two{
+                text-align: center;
+                flex-direction: column;
+                .image{
+                    img{
+                        margin: 10%;
+                        width: 25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:560px) and (min-width:450px){
+    button{
+        margin-bottom: 5%;
+    }
+    .specialties{
+        .container{
+            align-items: center;
+            .specialties_child_one{
+                text-align: center;
+                flex-direction: column;
+                .image{
+                    img{
+                        width: 20rem;
+                    }
+                }   
+            }
+            .specialties_child_two{
+                text-align: center;
+                flex-direction: column;
+                align-items: baseline;
+                .image{
+                    img{
+                        margin: 10%;
+                        width: 20rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:450px) and (min-width:320px){
+    button{
+        margin-bottom: 5%;
+    }
+    .specialties{
+        .container{
+            align-items: center;
+            .specialties_child_one{
+                text-align: center;
+                flex-direction: column;
+                .image{
+                    img{
+                        width: 15rem;
+                    }
+                }   
+            }
+            .specialties_child_two{
+                align-items: baseline;
+                text-align: center;
+                flex-direction: column;
+                .image{
+                    img{
+                        margin: 10%;
+                        width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+}

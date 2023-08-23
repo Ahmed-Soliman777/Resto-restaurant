@@ -1,0 +1,81 @@
+.reservation_responsive{
+    display: none;
+}
+.reservation{
+    // position: relative;
+    background-image: url(../../img/reservation-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    .container{
+        .book{
+            // position: absolute;
+            width: 25%;
+            background-color: #fff;
+
+            h6{
+                color: #f34949;
+                text-transform: capitalize;
+            }
+            h2{
+                text-transform: capitalize;
+            }
+            form{
+                &>*{
+                    display: block;
+                    margin: 5% auto;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    padding: 1% 2%;
+                }
+                &>*:not(:nth-child(4)){
+                    border: 0.5px solid #000;
+                    width: 80%;
+                }
+                .btn{
+                    transition: 1s;
+                    -webkit-transition: 1s;
+                    -moz-transition: 1s;
+                    -ms-transition: 1s;
+                    -o-transition: 1s;
+                    width: 45%;
+                    text-transform: capitalize;
+                    border: transparent;
+                    color: #fff;
+                    background-color: #f34949;
+                    padding: 2% 4%;
+                    border-radius: 25px;
+                    -webkit-border-radius: 25px;
+                    -moz-border-radius: 25px;
+                    -ms-border-radius: 25px;
+                    -o-border-radius: 25px;
+                    &:hover
+{
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+                        background-color: #6c2121;
+}
+}
+            }
+        }
+    }
+}
+@media (max-width:950px) and (min-width:0px){
+    .reservation{
+        display: none;
+    }   
+    .reservation_responsive{
+        display: block;
+        &>*{
+            display: block;
+            margin: 2% auto;
+            text-align: center;
+        }        
+    }
+}
