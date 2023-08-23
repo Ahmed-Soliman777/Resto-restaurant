@@ -340,7 +340,7 @@
             </div>
         </div>
     </section>
-    <!-- <div class="reservation">
+    <div class="reservation">
         <div class="container">
             <div class="book">
                 <h6>reservation</h6>
@@ -350,8 +350,10 @@
                     <input type="email" name="mail" id="user_mail" placeholder="email">
                     <input type="number" name="phone" id="phone_no" placeholder="phone">
                     <div>
-                        <input type="date" name="date" id="book_date">
-                        <input type="time" name="time" id="book_time">
+                        <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')"
+                            onblur="(this.type='text')" id="date" />
+                        <input placeholder="Time" class="textbox-n" type="text" onfocus="(this.type='time')"
+                            onblur="(this.type='text')" id="date" />
                     </div>
                     <input type="number" name="perons" id="persons_count" placeholder="person">
                     <textarea name="textarea" id="compliants" cols="30" rows="10" placeholder="your message"></textarea>
@@ -360,18 +362,25 @@
             </div>
         </div>
     </div>
-    <form action="" class="reservation_responsive">
-        <input type="text" name="name" id="user_name" placeholder="name">
-        <input type="email" name="mail" id="user_mail" placeholder="email">
-        <input type="number" name="phone" id="phone_no" placeholder="phone">
-        <div>
-            <input type="date" name="date" id="book_date">
-            <input type="time" name="time" id="book_time">
-        </div>
-        <input type="number" name="perons" id="persons_count" placeholder="person">
-        <textarea name="textarea" id="compliants" cols="30" rows="10" placeholder="your message"></textarea>
-        <input type="button" class="btn" value="send message">
-    </form> -->
+    <div class="reservation_responsive">
+        <h6>reservation</h6>
+        <h2>book now</h2>
+        <div class="reservation_responsive_img"></div>
+        <form action="" class="reservation_responsive_form">
+            <input type="text" name="name" id="user_name" placeholder="name">
+            <input type="email" name="mail" id="user_mail" placeholder="email">
+            <input type="number" name="phone" id="phone_no" placeholder="phone">
+            <div>
+                <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')"
+                    onblur="(this.type='text')" id="date" />
+                <input placeholder="Time" class="textbox-n" type="text" onfocus="(this.type='time')"
+                    onblur="(this.type='text')" id="date" />
+            </div>
+            <input type="number" name="perons" id="persons_count" placeholder="person">
+            <textarea name="textarea" id="compliants" cols="30" rows="10" placeholder="your message"></textarea>
+            <input type="button" class="btn" value="send message">
+        </form>
+    </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
