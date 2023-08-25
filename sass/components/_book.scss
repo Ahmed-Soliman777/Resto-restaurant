@@ -9,10 +9,14 @@
   text-align: center;
   .container {
     .book {
-      // position: absolute;
+      //position: absolute;
       width: 25%;
       background-color: #fff;
-
+      border-radius: 5%;
+      -webkit-border-radius: 5%;
+      -moz-border-radius: 5%;
+      -ms-border-radius: 5%;
+      -o-border-radius: 5%;
       h6 {
         color: #f34949;
         text-transform: capitalize;
@@ -83,7 +87,7 @@
     }
   }
 }
-@media (max-width: 1010px) and (min-width: 0px) {
+@media (max-width: 1250px) and (min-width: 0px) {
   .reservation {
     display: none;
   }
